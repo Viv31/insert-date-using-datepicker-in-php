@@ -60,10 +60,10 @@ else{
 if(isset($_POST['submit'])){
 	//$birthdate=$_POST['birthdate'];
 	 $birthdate = date('Y-m-d', strtotime($_POST['birthdate']));
-	echo $birthdate;
+	//echo $birthdate;
 
 
-	echo $insert="INSERT INTO datepicker_dob(birthdate) VALUES('$birthdate')";
+	//echo $insert="INSERT INTO datepicker_dob(birthdate) VALUES('$birthdate')";
 	$res=mysqli_query($conn,$insert);
 	if($res!=true){
 		die('failed to insert');
